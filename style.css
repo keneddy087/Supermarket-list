@@ -11,11 +11,16 @@ body{
     justify-content: center;
     background-color: #cfc5c4;
 }
+.container{
+    width: 100%;
+}
 
 .new-list-container{
-    width: 95vh;
+    width: 50%;
     margin-top: 5vh;
     background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
     padding: 35px 20px;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
@@ -62,8 +67,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 5% 5%;
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
+    margin: 15px auto;
     margin-top: 15px;
     margin-bottom: 6%;
     box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
@@ -377,7 +383,6 @@ ul > li{
     display: flex;
     width: 35%;
     justify-content: space-between; 
-    background-color: ;
 }
 
 .teste{
@@ -392,14 +397,12 @@ ul > li{
     /*background-color: red;*/
 }
 
-/*@keyframes animate{
-    0%{
-        opacity: 0;
+/*-- Responsivo --*/
+@media screen and (max-width: 768px){
+    .list-item{
+        width: 90%;
     }
-    50%{
-        opacity: 0.7;
+    .new-list-container{
+        width: 90%;
     }
-    100%{
-        opacity: 0;
-    }
-}*/
+}
